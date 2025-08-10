@@ -11,7 +11,8 @@
 
   <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
 
-  <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
+  <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+
 
   {% if page.excerpt %}
   <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}"/>
@@ -50,7 +51,8 @@
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
 
-  <link rel="stylesheet" href="{{ '/assets/css/callouts.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/callouts.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+
   <script defer src="{{ '/assets/js/callouts.js' | relative_url }}"></script>
 
 </head>
