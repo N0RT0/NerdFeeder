@@ -4,13 +4,8 @@ title: Home
 id: home
 permalink: /
 ---
-
-# Welcome!🤓
-
-This site is here to help with everything from quick references to in-depth tutorials on engineering, math, physics, computer science, and more. Whether you're looking to brush up on a concept or dive into a new topic, you'll find clear explanations and useful resources to guide you along the way.
-
-Take a look around and explore the content!
-
+## Physics
+- [[Maxwell's Equations]]
 
 <strong>Recently updated notes</strong>
 
