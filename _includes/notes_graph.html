@@ -1,25 +1,29 @@
 <style>
   .links line {
-    stroke: #ccc;
+    stroke: #4a4f5a; /* was #ccc */
     opacity: 0.5;
   }
 
   .nodes circle {
     cursor: pointer;
-    fill: #8b88e6;
+    fill: #7ab0ff; /* was #8b88e6 */
     transition: all 0.15s ease-out;
   }
 
   .text text {
     cursor: pointer;
-    fill: #333;
-    text-shadow: -1px -1px 0 #fafafabb, 1px -1px 0 #fafafabb, -1px 1px 0 #fafafabb, 1px 1px 0 #fafafabb;
+    fill: #e9e9ec; /* was #333 */
+    text-shadow:
+      -1px -1px 0 #0b0b0dcc,
+       1px -1px 0 #0b0b0dcc,
+      -1px  1px 0 #0b0b0dcc,
+       1px  1px 0 #0b0b0dcc; /* was #fafafabb */
   }
 
   .nodes [active],
   .text [active] {
     cursor: pointer;
-    fill: black;
+    fill: #ffffff; /* was black */
   }
 
   .inactive {
@@ -28,7 +32,7 @@
   }
 
   #graph-wrapper {
-    background: #fcfcfc;
+    background: #242424; /* was #fcfcfc */
     border-radius: 4px;
     height: auto;
   }
@@ -38,6 +42,7 @@
     display: block;
   }
 </style>
+
 
 <div id="graph-wrapper">
   <script>
