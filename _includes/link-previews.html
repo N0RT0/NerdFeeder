@@ -92,7 +92,6 @@
         }, 1)
       }
 
-
       tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
       if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
           tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
@@ -137,5 +136,14 @@
     });
   }
 
-  document.querySelectorAll('{{ include.wrapperQuerySelector }} a').forEach(setupListeners);
+  /* === toggle: set to true to re-enable previews === */
+  var ENABLE_LINK_PREVIEWS = false;
+
+  document.addEventListener('DOMContentLoaded', function () {
+    if (!ENABLE_LINK_PREVIEWS) return;
+    document
+      .querySelectorAll('{{ include.wrapperQuerySelector }} a')
+      .forEach(setupListeners);
+  });
 </script>
+
