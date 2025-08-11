@@ -1,3 +1,32 @@
-<div>
-    <a class="internal-link" href="{{ site.baseurl }}/"><b>{{ site.title }}</b></a>
+<!-- <div>
+    <a class="internal-link" href="{{ site.baseurl }}/"><b>🤓 {{ site.title }}</b></a>
+</div> -->
+
+<div class="site-title">
+  <a class="internal-link site-title-link" href="{{ '/' | relative_url }}">
+    {{ site.title }}
+  </a>
 </div>
+
+<style>
+  .site-title { line-height: 1; }
+
+  .site-title-link{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    font-weight: 800;
+    font-size: clamp(1.75rem, 2.8vw + 0.25rem, 2.75rem);
+    letter-spacing: .5px;
+    text-decoration: none;
+    border-bottom: none;
+
+    /* Fancy gradient text for dark mode */
+    background: linear-gradient(90deg, #222e42, #ffffff 40%, #20333b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .site-title-link:hover{
+    text-shadow: 0 0 18px rgba(122,176,255,.35);
+  }
+</style>
